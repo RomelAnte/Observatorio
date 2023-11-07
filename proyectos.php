@@ -24,7 +24,7 @@
 
           <?php  
             include('connect2.php'); 
-            $query = "select * from proyecto where estado=1 "; 
+            $query = "select * from proyecto"; 
             $resultado = mysqli_query($conn,$query);
           ?>
 

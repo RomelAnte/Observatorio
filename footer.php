@@ -21,13 +21,14 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Enlaces Útiles</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="sis_inventario/index.php">Login</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php">Inicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="eventos.php">Eventos</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="index.php">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="evaluadores.php">Banco de Evaluadores</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="alianzas.php">Alianzas</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="eventos.php">Eventos</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="noticias.php">Noticias</a></li>              
               <li><i class="bx bx-chevron-right"></i> <a href="proyectos.php">Proyectos</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="publicacion.php">Publicaciones</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="evaluadores.php">Banco de Evaluadores</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="sis_inventario/index.php">Login</a></li>
               
             </ul>
           </div>
