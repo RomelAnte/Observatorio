@@ -1,4 +1,5 @@
 <?php include "header.php"; ?>
+
   <!-- ======= Hero Section ======= -->
   <style>
 .embed-container {
@@ -20,7 +21,7 @@
 </div>
   
   <!-- End Hero -->
-
+  <meta charset="utf-8">
   <main id="main" style="" >
 
     <!-- ======= Featured Section ======= -->
@@ -74,10 +75,10 @@
           <h2>Últimas Noticias</h2>
         </div>
         <div class="row">
-              <?php
+              <?php                
                 $result = $db->prepare("SELECT * FROM banner where estado=1 ORDER BY id DESC Limit 3");
                 $result->execute();
-                for($i=0; $row = $result->fetch(); $i++){   
+                for($i=0; $row = $result->fetch(); $i++){  
               ?>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
@@ -118,7 +119,6 @@
                 </div>
               </div>
               <!--fin de la Caja para la imagen -->
-
               <h4><a href="news_post.php?id=<?php echo $row['id'];?>" style="text-align:justify; font-size: 14px;"><?php echo strip_tags(substr($row['titulo'],0,40)) ;?>...</a></h4>
               
               <div class="" style="text-align:justify;">

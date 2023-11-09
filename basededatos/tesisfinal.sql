@@ -58,7 +58,7 @@ INSERT INTO `alianza_canton` (`id_can_alia`, `id_prov_alia`, `nom_can_alia`) VAL
 (18, 18, 'Puyo'),
 (19, 19, 'Quito'),
 (20, 20, 'Santa Elena'),
-(21, 21, ' Santo Domingo'),
+(21, 21, 'Santo Domingo'),
 (22, 22, 'Nueva Loja'),
 (23, 23, 'Nueva Loja'),
 (24, 23, 'Ambato');
@@ -392,7 +392,7 @@ CREATE TABLE `excos` (
 --
 
 INSERT INTO `excos` (`id`, `name`, `office`, `zone`, `phone`, `email`) VALUES
-(1, 'Rt. Rev\'d Okeke', 'National Chiarman', 'Orlu', '08022445353', 'okekert@efac.com'),
+(1, 'Rt. Revd Okeke', 'National Chiarman', 'Orlu', '08022445353', 'okekert@efac.com'),
 (2, 'Bryan Yambay', 'Estudiante', 'utc', '0987592584', 'yambaybryan@gmail.com'),
 (3, 'Ana Ruiz', 'ana', 'ana@gmail.com', '1515545', 'by@jjb');
 

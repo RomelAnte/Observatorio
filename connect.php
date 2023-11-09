@@ -18,9 +18,9 @@ include "idiorm.php";
 $db = new PDO("mysql:host=".$db_host.";dbname=".$db_database, $db_user, $db_pass);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $conn = mysqli_connect($db_host, $db_user,$db_pass);
+$conn->set_charset("utf8");
 mysqli_select_db($conn, $db_database);
 $mysqli = new mysqli;
-
 
 class App {   
     public static function message($type,$message,$code=''){
