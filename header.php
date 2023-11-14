@@ -69,7 +69,7 @@ include "connect.php";
           <li><h2><a href="alianzas.php">Alianzas</a></h2></li>
           <li><h2><a href="eventos.php">Eventos</a></h2></li>
           <li><h2><a href="proyectos.php">Proyectos</a></h2></li>
-          <li><h2><a href="publicacion.php">Publicacion</a></h2></li>
+          <li><h2><a href="publicacion.php">Publicaciones</a></h2></li>
           <li><h2><a href="contacto.php">Contacto</a></h2></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

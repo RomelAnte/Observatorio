@@ -3,21 +3,33 @@
   <!-- ======= Hero Section ======= -->
   <style>
 .embed-container {
-    position: relative;
-    padding-bottom: 37.25%;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 37.25%;
+  height: 0;
+  overflow: hidden;
+  margin: auto; 
+  display:flex;!important
+  justify-content: center;!important
+  align-items:center;!important
 }
 .embed-container iframe {
-    position: absolute;
+    position: absolute;    
     top:0;
     left: 0;
     width: 100%;
     height: 100%;
 }
+.embed-container div {
+    position: absolute;    
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
 </style>
 <div class="embed-container">
-    <iframe src="banner.php" frameborder="0" allowfullscreen></iframe>
+    <iframe src="banner.php" frameborder="0"></iframe>
 </div>
   
   <!-- End Hero -->
