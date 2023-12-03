@@ -24,7 +24,7 @@
 
           <?php  
             include('connect2.php'); 
-            $query = "select * from events where estado=1 "; 
+            $query = "select * from events where estado=1 ORDER BY fecha desc"; 
             $resultado = mysqli_query($conn,$query);
           ?>
 
@@ -56,7 +56,7 @@
               </h4>
               <div style="height:48px;">
                 <p>
-                <?php echo strip_tags(substr($row['descripcion'],0,300)) ;?>...
+                <?php echo strip_tags(substr($row['descripcion'],0,75)) ;?>...
               </p>
               </div>
               

@@ -65,7 +65,7 @@ include "connect.php";
         <nav id="navbar" class="navbar">
         <ul>
           <li><h2><a href="index.php">Inicio</a></h2></li>
-          <li><h2><a href="evaluadores.php">Banco de Evaluadores</a></h2></li>
+          <!--<li><h2><a href="evaluadores.php">Banco de Evaluadores</a></h2></li>-->
           <li><h2><a href="alianzas.php">Alianzas</a></h2></li>
           <li><h2><a href="eventos.php">Eventos</a></h2></li>
           <li><h2><a href="proyectos.php">Proyectos</a></h2></li>

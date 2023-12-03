@@ -1740,8 +1740,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
+  margin: 0;
   background: #404040;
-  padding: 0 0 30px 0;
+  /*padding: 0 0 30px 0;*/
   color: #fff;
   font-size: 14px;
 }
@@ -1884,8 +1885,8 @@ section {
   line-height: 26px;
 }
 #footer .copyright {
-  text-align: center;
-  padding-top: 30px;
+  text-align: right;
+  /*padding-top: 30px;*/
 }
 #footer .credits {
   padding-top: 10px;

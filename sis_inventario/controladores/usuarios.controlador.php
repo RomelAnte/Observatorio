@@ -6,6 +6,11 @@ class ControladorUsuarios{
 	INGRESO DE USUARIO
 	=============================================*/
 
+/*	static public function encriptar(){
+		$encriptar = crypt(".admin_2023*", '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
+		echo "<h1>HOLA MUNDO:  $encriptar</h1>";
+	}*/
+
 	static public function ctrIngresoUsuario(){
 
 		if(isset($_POST["ingUsuario"])){

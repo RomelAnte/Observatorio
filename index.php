@@ -27,6 +27,7 @@
     height: 100%;
     
 }
+
 </style>
 <div class="embed-container">
     <iframe src="banner.php" frameborder="0"></iframe>
@@ -149,13 +150,13 @@
     </section>
     <!-- fin de las noticias -->
 
-<div style="background-color: #305395; height: 300px;">
+<div style="background-color: #305395; height: 175px;">
   <br>
   <br>
     <!-- ======= inicio Galeria ======= -->
     <section id="portfolio" class="portfolio"  >
       <div class="container" >
-        <div class="row portfolio-container" >
+        <!--<div class="row portfolio-container" >
             <?php
               $result = $db->prepare("SELECT * FROM gallery ORDER BY id DESC Limit 4");
               $result->execute();
@@ -180,7 +181,10 @@
             </div>
           </div>
             <?php } ?>
-
+        </div>-->
+        <div class="container__">
+          <img src="assets/img/logo.png" style="float: left;">
+          <img src="assets/img/prueba.png" style="float: right; margin: auto;">
         </div>
       </div>
     </section>
