@@ -9,11 +9,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST["titulo"])){
 	 $descripcion = mysqli_real_escape_string($con,($_POST['descripcion']));
 	 $fecha = mysqli_real_escape_string($con,($_POST['fecha']));
 	 $hora = mysqli_real_escape_string($con,($_POST['hora']));
+	 $url_video = mysqli_real_escape_string($con,($_POST['url_video']));
 	 $url_web = mysqli_real_escape_string($con,($_POST['url_web']));
 	
 	 $estado = intval($_POST['estado']);
 	 $id_banner=intval($_POST['id_banner']);
-	 $sql="UPDATE events SET titulo='$titulo', descripcion='$descripcion', estado='$estado', fecha='$fecha', hora='$hora', url_web='$url_web' WHERE id='$id_banner'";
+	 $sql="UPDATE events SET titulo='$titulo', descripcion='$descripcion', estado='$estado', fecha='$fecha', hora='$hora', url_video='$url_video', url_web='$url_web' WHERE id='$id_banner'";
 	 $query = mysqli_query($con,$sql);
 	// if user has been added successfully
 	if ($query) {

@@ -27,7 +27,7 @@ class AjaxProductos{
 
 
 
-
+}
 /*=============================================
 GENERAR CÓDIGO A PARTIR DE ID CATEGORIA
 =============================================*/	

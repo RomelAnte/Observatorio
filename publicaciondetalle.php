@@ -1,14 +1,14 @@
 <?php include "header.php"; ?>
-  <!-- inicio noticias -->  
-    <?php
-      $id=$_GET['id'];
-      $result = $db->prepare("SELECT * FROM publicacion where id= :post_id and estado=1");
-      $result->bindParam(':post_id', $id);
-      $result->execute();
-      for($i=0; $row = $result->fetch(); $i++){                        
-    ?>
-  <main id="main">
-    
+<!-- inicio noticias -->
+<?php
+$id = $_GET['id'];
+$result = $db->prepare("SELECT * FROM publicacion where id= :post_id and estado=1");
+$result->bindParam(':post_id', $id);
+$result->execute();
+for ($i = 0; $row = $result->fetch(); $i++) {
+  ?>
+  <main id="main" style="margin:0 0 50px 0;">
+
     <!-- ======= inicio noticia individual ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
@@ -17,7 +17,9 @@
           <li><a href="index.php">Inicio</a></li>
           <li><a href="publicacion.php">Publicaciones</a></li>
         </ol>
-        <h2><?php echo $row['titulo']; ?></h2>
+        <h2>
+          <?php echo $row['titulo']; ?>
+        </h2>
 
       </div>
     </section>
@@ -34,11 +36,14 @@
             <article class="entry entry-single">
 
               <div class="entry-img">
-                <embed src="sis_inventario/vistas/modulos/publicacion/img/banner/<?php echo $row['url_image']; ?>" type="application/pdf" style="width:100%; height:600px;" />
+                <embed src="sis_inventario/vistas/modulos/publicacion/img/banner/<?php echo $row['url_image']; ?>"
+                  type="application/pdf" style="width:100%; height:600px;" />
               </div>
 
               <h2 class="entry-title" style="text-align: justify;">
-                <a href=""><?php echo $row['titulo']; ?></a>
+                <a href="">
+                  <?php echo $row['titulo']; ?>
+                </a>
               </h2>
 
               <div class="entry-meta">
@@ -47,17 +52,17 @@
                   <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">John Doe</a></li>
                   -->
                   <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html">
-                    <time datetime="2020-01-01">
-                      <?php
-                      $fecha = $row['publicado'];
-                      $fechaEntera = strtotime($fecha);
-                      $anio = date("Y", $fechaEntera);
-                      $mes = date("m", $fechaEntera);
-                      $dia = date("d", $fechaEntera);
-                       
-                      echo "$anio-$mes-$dia";
-                      ?>
-                  </time></a></li>
+                      <time datetime="2020-01-01">
+                        <?php
+                        $fecha = $row['publicado'];
+                        $fechaEntera = strtotime($fecha);
+                        $anio = date("Y", $fechaEntera);
+                        $mes = date("m", $fechaEntera);
+                        $dia = date("d", $fechaEntera);
+
+                        echo "$anio-$mes-$dia";
+                        ?>
+                      </time></a></li>
                   <!--
                   <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-single.html">12 Comments</a></li>
                   -->
@@ -66,7 +71,7 @@
 
               <div class="entry-content">
                 <p style="text-align: justify;">
-                 <?php echo $row['descripcion']; ?>
+                  <?php echo $row['descripcion']; ?>
                 </p>
 
                 <!-- apartado 
@@ -238,31 +243,35 @@
               <h3 class="sidebar-title">Publicaciones Recientes </h3>
               <div class="sidebar-item recent-posts">
                 <?php
-                  $result = $db->prepare("SELECT * FROM publicacion where estado=1 ORDER BY id DESC Limit 5");
-                  $result->execute();
-                  for($i=0; $row = $result->fetch(); $i++){   
-                ?>
-                <hr>
-                <div class="post-item clearfix" style="">
-                  <h4 style="text-align: justify;margin-left: 0px;">
-                    <a href="publicaciondetalle.php?id=<?php echo $row['id'];?>"><?php echo strip_tags(substr($row['titulo'],0,45)) ;?>...</a>
-                  </h4>
+                $result = $db->prepare("SELECT * FROM publicacion where estado=1 ORDER BY id DESC Limit 5");
+                $result->execute();
+                for ($i = 0; $row = $result->fetch(); $i++) {
+                  ?>
+                  <hr>
+                  <div class="post-item clearfix" style="">
+                    <h4 style="text-align: justify;margin-left: 0px;">
+                      <a href="publicaciondetalle.php?id=<?php echo $row['id']; ?>">
+                        <?php echo strip_tags(substr($row['titulo'], 0, 45)); ?>...
+                      </a>
+                    </h4>
 
-                  <p style="font-size: 14px;"> 
-                    <?php echo strip_tags(substr($row['descripcion'],0,100)) ;?>...
-                  </p>
+                    <p style="font-size: 14px;">
+                      <?php echo strip_tags(substr($row['descripcion'], 0, 100)); ?>...
+                    </p>
 
-                  <time datetime="2020-01-01" style="text-align: right;"><?php
-                  $fecha = $row['publicado'];
-                  $fechaEntera = strtotime($fecha);
-                  $anio = date("Y", $fechaEntera);
-                  $mes = date("m", $fechaEntera);
-                  $dia = date("d", $fechaEntera);
-                   
-                  echo "$anio-$mes-$dia";
-                  ?></time>
-                </div>
-                
+                    <time datetime="2020-01-01" style="text-align: right;">
+                      <?php
+                      $fecha = $row['publicado'];
+                      $fechaEntera = strtotime($fecha);
+                      $anio = date("Y", $fechaEntera);
+                      $mes = date("m", $fechaEntera);
+                      $dia = date("d", $fechaEntera);
+
+                      echo "$anio-$mes-$dia";
+                      ?>
+                    </time>
+                  </div>
+
 
                 <?php } ?>
 
@@ -280,26 +289,27 @@
     </section><!-- End Blog Single Section -->
 
   </main>
-    <?php } ?>
-  <!-- fin noticias-->
+<?php } ?>
+<!-- fin noticias-->
 
-  <!-- ======= Footer ======= -->
-  <?php include "footer.php"; ?>
-  <!-- End Footer -->
+<!-- ======= Footer ======= -->
+<?php include "footer.php"; ?>
+<!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 

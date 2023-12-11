@@ -1,7 +1,7 @@
 <?php
 $DB_HOST="localhost";
 //$DB_NAME= "test_portfolio";
-$DB_NAME= "sis_inventario";
+$DB_NAME= "obsebarotio1";
 $DB_USER= "root";
 $DB_PASS= "";
 	# conectare la base de datos

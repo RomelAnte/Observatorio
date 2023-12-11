@@ -20,6 +20,7 @@ $titulo=$rw['titulo'];
 $fecha=$rw['fecha'];
 $hora=$rw['hora'];
 $descripcion=$rw['descripcion'];
+$url_video=$rw['url_video'];
 $url_image=$rw['url_image'];
 
 $estado=intval($rw['estado']);
@@ -100,6 +101,12 @@ $('#fecha').attr('min', new Date().toISOString().split('T')[0])
 				  <textarea class='form-control' name="descripcion" id="descripcion" required rows=8><?php echo $descripcion;?></textarea>
 				</div>
 			  </div>	
+			  <div class="form-group">
+				<label for="url_video" class="col-sm-3 control-label">URL Video</label>
+				<div class="col-sm-9">
+				  <input type="url" class="form-control" id="url_video" value=""  name="url_video">
+				</div>
+			  </div>
 			  
 			
 			<div class="form-group">
@@ -129,7 +136,7 @@ $('#fecha').attr('min', new Date().toISOString().split('T')[0])
 			  <div id='loader'></div>
 			  <div class='outer_div'></div>
 				<div class="col-sm-offset-3 col-sm-9">
-				  <button type="submit" class="btn btn-success">Actualizar datos</button>
+				  <button type="submit" class="btn btn-success">Agregar Evento</button>
 				</div>
 			  </div>
 			</form>

@@ -473,10 +473,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
-  /*padding: 0 0 80px 0;*/
-}
-
 .section-bg {
   background-color: white;
 }
@@ -610,14 +606,12 @@ section {
 /*--------------------------------------------------------------
 # Our Services
 --------------------------------------------------------------*/
-.services .icon-box {
+.services .news__ {
   text-align: center;
   border: 1px solid #ededed;
-  /*padding: 80px 20px; espacio en las cajas de las noticias*/
   padding: 11px 14px;
-  transition: all ease-in-out 0.3s;
 }
-.services .icon-box .icon {
+.services .news__ .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -630,11 +624,11 @@ section {
   margin-bottom: 20px;
   transform-style: preserve-3d;
 }
-.services .icon-box .icon i {
+.services .news__ .icon i {
   color: #fff;
   font-size: 28px;
 }
-.services .icon-box .icon::before {
+.services .news__ .icon::before {
   position: absolute;
   content: "";
   left: -8px;
@@ -644,35 +638,35 @@ section {
   background: #fbe2dd;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
+  transform: translateZ(-1px)
 }
-.services .icon-box h4 {
+.services .news__ h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
-.services .icon-box h4 a {
+.services .news__ h4 a {
   color: #545454;
 }
-.services .icon-box p {
+.services .news__ p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
-.services .icon-box:hover {
+.services .news__:hover {
   background: #e96b56;
   border-color: #e96b56;
 }
-.services .icon-box:hover .icon {
+.services .news__hover .icon {
   background: #fff;
 }
 .services .icon-box:hover .icon i {
   color: #e96b56;
 }
-.services .icon-box:hover .icon::before {
+.services .news__:hover .icon::before {
   background: #ef9383;
 }
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .news__:hover h4 a, .services .icon-box:hover p {
   color: #fff;
 }
 

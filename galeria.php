@@ -1,6 +1,6 @@
 
 <?php include "header.php"; ?>
-  <main id="main">
+  <main id="main" style="margin:0 0 50px 0;">
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">

@@ -1,6 +1,6 @@
 <?php include "header.php"; ?>
 
-  <main id="main">
+  <main id="main" style="margin:0 0 50px 0;">
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -24,7 +24,7 @@
 
           <?php  
             include('connect2.php'); 
-            $query = "select * from proyecto"; 
+            $query = "select * from proyecto where estado=1"; 
             $resultado = mysqli_query($conn,$query);
           ?>
 
@@ -42,7 +42,7 @@
               
               <embed src="sis_inventario/vistas/modulos/proyecto/img/banner/<?php echo $row['url_image']; ?>" type="application/pdf" style="width:100%; height:200px;" />
 
-              <div style="height:50px;"><h3><?php echo strip_tags(substr($row['titulo'],0,55)) ;?>...</h3></div>
+              <div style="height:50px;"><h3><?php echo strip_tags(substr($row['titulo'],0,50)) ;?>...</h3></div>
               <h4>Publicado: 
                 <?php
                   $fecha = $row['publicado'];

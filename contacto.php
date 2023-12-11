@@ -1,7 +1,7 @@
 <?php include "header.php"; ?>
 
 
-  <main id="main">
+  <main id="main" style="margin:0 0 50px 0;">
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -41,7 +41,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Teléfono </h3>
-              <p>0995617293</p>
+              <p>(+593) 995617293</p>
             </div>
           </div>
 

@@ -32,7 +32,7 @@
   while($sub_row = mysqli_fetch_array($product_result))
   {
     $tab_content .= '
-    <div class="col-md-3" style="margin-bottom:8px; border: 1px solid #ddd; width: 295px; height: 410px;
+    <div class="col-md-3" style="margin-bottom:15px; border: 1px solid #ddd; width: 295px; height: 300px;
       margin-right: 15px;">
           <!-- inicio estilos auxiliares para el tamaño de la imagen -->
               <style type="text/css">
@@ -74,17 +74,16 @@
                 </div>
                 <!--fin de la Caja para la imagen -->
     
-    <center>
-    <div style="height:60px; margin-top: -20px; font-size:12px;">
-      <a href="'.$sub_row["url_web"].'" target="_blank"><h4>'.$sub_row["titulo"].'</h4></a>
-    </div>
-    </center>
-    <div style="height:60px; font-size:12px; text-align: justify;">
-      <p><strong>'.$sub_row["profesion"].'</strong> : '.$sub_row["encargado"].'</p>
-      <p><strong>Email</strong> : '.$sub_row["email"].'</p>
-      <p><strong>Teléfono</strong> : '.$sub_row["telefono"].'</p>
-    </div>
-
+      <center>
+      <div style="height:60px; margin-top: -20px; font-size:12px;">
+        <a href="'.$sub_row["url_web"].'" target="_blank"><h4>'.$sub_row["titulo"].'</h4></a>
+      </div>
+      </center>
+      <!--div style="height:60px; font-size:12px; text-align: justify;">
+        <p><strong>'.$sub_row["profesion"].'</strong> : '.$sub_row["encargado"].'</p>
+        <p><strong>Email</strong> : '.$sub_row["email"].'</p>
+        <p><strong>Teléfono</strong> : '.$sub_row["telefono"].'</p>
+      </div-->
     </div>
     ';
   }
@@ -101,19 +100,18 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  </head>
  <body>
-  <div class="container">
-   
-   <ul class="nav nav-tabs">
-   <?php
-   echo $tab_menu;
-   ?>
-   </ul>
-   <div class="tab-content" >
-   <br />
-   <?php
-   echo $tab_content;
-   ?>
-   </div>
+  <div class="container">   
+    <ul class="nav nav-tabs">
+      <?php
+        echo $tab_menu;
+      ?>
+    </ul>
+    <div class="tab-content" style="margin-bottom: 15px">
+      <br />
+      <?php
+        echo $tab_content;
+      ?>
+    </div>
   </div>
  </body>
 </html>

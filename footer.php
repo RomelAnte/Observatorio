@@ -26,6 +26,7 @@
         </div>
       </div>
     </div>-->
+
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>2022</span></strong>. Observatorio de buenas prácticas 

@@ -18,6 +18,7 @@ $fecha=$rw['fecha'];
 $hora=$rw['hora'];
 $descripcion=$rw['descripcion'];
 $url_image=$rw['url_image'];
+$url_video=$rw['url_video'];
 $url_web=$rw['url_web'];
 $estado=intval($rw['estado']);
 $active_config="active";
@@ -94,7 +95,12 @@ $('#fecha').attr('min', new Date().toISOString().split('T')[0])
 				  <textarea class='form-control' name="descripcion" id="descripcion" required rows=8><?php echo $descripcion;?></textarea>
 				</div>
 			  </div>
-					
+			  <div class="form-group">
+				<label for="url_video" class="col-sm-3 control-label">URL Video</label>
+				<div class="col-sm-9">
+				  <input type="url" class="form-control" id="url_video" value="<?php echo $url_video;?>"  name="url_video">
+				</div>
+			  </div>
 			<div class="form-group">
 				<label for="url_web" class="col-sm-3 control-label">URL Sitio Web</label>
 				<div class="col-sm-9">

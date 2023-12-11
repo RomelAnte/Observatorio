@@ -1,6 +1,6 @@
 <?php include "header.php"; ?>
 
-  <main id="main">
+  <main id="main" style="margin:0 0 50px 0;">
     <?php
           $id=$_GET['id'];
           $result = $db->prepare("SELECT * FROM clientes where id= :post_id and estado=1");

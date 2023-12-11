@@ -54,60 +54,49 @@ include("conexion.php");
           <!-- Reference detail-->
           <div id="references-masonry" data-animate="fadeInUp">
             <div class="row">
-			<?php 
-				$sql_banner_top=mysqli_query($con,"select * from events where estado=1 order by orden ");
-				while($row=mysqli_fetch_object($sql_banner_top)){
-					?>
-				 <div data-category="webdesign" class="reference-item col-lg-4 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/banner/<?php echo $row->url_image;?>" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 style="font-size: 16px;" class="h4 reference-title"><?php echo $row->titulo;?></h3>
-                            <p><?php echo $row->fecha;?></p>
-                          </div>
-                        </div></a>
-
-                      <div data-images="img/banner/<?php echo $row->url_image;?>" class="sr-only reference-description">
-                        <style type="text/css">
-                          .fit-image{
-                           width: 75%; 
-                           height: 700px;
-                          }
-                        </style>
-                        <center><img src="img/banner/<?php echo $row->url_image;?>" alt="" class="img-responsive fit-image"></center>
-
-                        <p><?php echo $row->descripcion;?></p>
-                        <div>
-                          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-                          <div class="w3-container">
-  <h3>Detalle</h3>
-  <ul class="w3-ul w3-card-4">
-    <ul class="w3-ul">
-   
-    <li class="w3-large"><i class="fa fa-calendar"></i> Fecha: <?php echo $row->fecha;?></li>
-    <li class="w3-large"><i class="fa fa-clock-o"></i> Hora:  <?php echo $row->hora;?></li>
-  </ul>
-
-
-  </ul>
-</div>
-                        </div>
-                       
-                        <p class="buttons text-center"><a href="<?php echo $row->url_web;?>" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Sitio Web</a></p>
-                      </div>
-
+              <?php 
+                $sql_banner_top=mysqli_query($con,"select * from events where estado=1 order by orden ");
+                while($row=mysqli_fetch_object($sql_banner_top)){
+              ?>
+				      <div data-category="webdesign" class="reference-item col-lg-4 col-md-6">
+                <div class="reference"><a href="#"><img src="img/banner/<?php echo $row->url_image;?>" alt="" class="img-fluid">
+                  <div class="overlay">
+                    <div class="inner">
+                      <h3 style="font-size: 16px;" class="h4 reference-title"><?php echo $row->titulo;?></h3>
+                      <p><?php echo $row->fecha;?></p>
                     </div>
-                  </div>	
+                  </div>
+                  </a>
+                  <div data-images="img/banner/<?php echo $row->url_image;?>" class="sr-only reference-description">
+                    <style type="text/css">
+                      .fit-image{
+                        width: 75%; 
+                        height: 700px;
+                      }
+                    </style>
+                    <center>
+                      <img src="img/banner/<?php echo $row->url_image;?>" alt="" class="img-responsive fit-image">
+                    </center>
+                    <p><?php echo $row->descripcion;?></p>
+                    <div>
+                      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                      <div class="w3-container">
+                      <h3>Detalle</h3>
+                      <ul class="w3-ul w3-card-4">
+                        <ul class="w3-ul">                          
+                          <li class="w3-large"><i class="fa fa-calendar"></i> Fecha: <?php echo $row->fecha;?></li>
+                          <li class="w3-large"><i class="fa fa-clock-o"></i> Hora:  <?php echo $row->hora;?></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>                       
+                  <p class="buttons text-center"><a href="<?php echo $row->url_web;?>" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Sitio Web</a></p>
+                </div>
+              </div>
+            </div>	
 					<?php
-				}
-			?>
-                 
-               
-                  
-                  
-                
-                 
-                 
+				    }
+			    ?>   
             </div>
           </div>
         </div>

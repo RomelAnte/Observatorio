@@ -7,7 +7,7 @@
       $result->execute();
       for($i=0; $row = $result->fetch(); $i++){                        
     ?>
-  <main id="main">
+  <main id="main" style="margin:0 0 50px 0;">
     
     <!-- ======= inicio noticia individual ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
