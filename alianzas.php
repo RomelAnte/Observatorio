@@ -44,16 +44,16 @@
     <!-- fin de las cajas de alianzas -->
 
     <!-- inicio requisito para formar parte del observatorio -->
-    <div class="main" role="main">
+    <!--<div class="main" role="main">
       <div id="content" class="content full">
         <div class="container">
           <section class="section" >
             <div style="text-align:justify;" class="listing events-listing">
                 <header >
                   <h3 class=" titles">¿Cómo ser parte del Observatorio?</h3>
-                </header>
+                </header>-->
                 <!-- ............................................ -->
-                <div style=" overflow: auto; border: 0px solid #4CAF50; padding: 5px; background-color:rgba(0, 153, 168, 0.1);  border-radius: 90px;">
+                <!--<div style=" overflow: auto; border: 0px solid #4CAF50; padding: 5px; background-color:rgba(0, 153, 168, 0.1);  border-radius: 90px;">
                   <img src="assets/img/formulario.png" alt="Pineapple" width="100" height="100">
                   
                   <span style="font-size:18px; text-align: justify;">Llenar el formulario del registro.</span>
@@ -73,21 +73,21 @@
                   <img src="assets/img/aproba.png" alt="Pineapple" width="100" height="100">
                   
                   <span style="font-size:18px; text-align: justify;">Aprobación de la inscripción.</span>
-                </div>
+                </div>-->
                 <!-- ................style="float: left;"............................ -->
-              </div>
+              <!--</div>
               <br>
               <div style="text-align:right; font-size:25px;">
               
                 <a href="alianzasagre.php"><img src="assets/img/registro.png" alt="Pineapple" width="25%"></a>
               </div>
 
-          </section>
+          </section>-->
           <!-- end section -->
           
-        </div>
+        <!--</div>
       </div>
-    </div>
+    </div>-->
     <!-- fin requisito para formar parte del observatorio -->
 
 

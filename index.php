@@ -79,7 +79,7 @@
 <section id="services" class="services">
   <div class="container">
     <div class="section-title">
-      <h2>Últimas Noticias</h2>
+      <h2>Noticias</h2>
     </div>
     <div class="news">
         <?php                
@@ -195,7 +195,7 @@
   <hr>
 </section>
 <!-- fin de las noticias -->
-<div style="background-color:#0099a866; height: 175px;">
+<div style="background-color:#ffffff; height: 175px;">
   <br>
   <br>
   <!-- ======= inicio Galeria ======= -->

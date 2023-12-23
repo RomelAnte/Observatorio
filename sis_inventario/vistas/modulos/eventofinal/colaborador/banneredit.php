@@ -22,6 +22,7 @@ $url_web=$rw['url_web'];
 $estado=intval($rw['estado']);
 $active_config="active";
 $active_banner="active";
+$insert = [$titulo,$fecha,$hora,$descripcion,$url_image,$url_web,$estado,$active_config,$active_banner];
 ?>
 <!DOCTYPE html>
 <html lang="en">

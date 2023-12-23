@@ -24,7 +24,7 @@
           <div class="col-lg-6">
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
-              <h3>Nuestra Dirección</h3>
+              <h3>Nuestra dirección</h3>
               <p>Av. Simón Rodríguez s/n Barrio El Ejido Sector San Felipe.</p>
             </div>
           </div>
