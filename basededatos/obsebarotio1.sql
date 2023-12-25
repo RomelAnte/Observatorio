@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-12-2023 a las 15:06:00
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Tiempo de generación: 25-12-2023 a las 18:47:02
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -232,7 +232,8 @@ CREATE TABLE `banner` (
 INSERT INTO `banner` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `publicado`) VALUES
 (1, 'III Encuentro Internacional de Semilleros de Investigación en Calidad y Metrología', 'La Red Académica de investigación en calidad es una instancia que investiga y discute la calidad como una herramienta para aumentar la productividad y competitividad organizacional; por lo tanto, debe crear los espacios para el debate, la crítica y la discusión de los problemas relacionados con la calidad, su concepto e implementación en los diferentes procesos, con el propósito de formar estudiantes con soporte teórico, investigativo, espíritu crítico y propositivo en las discusiones académicas y acciones organizacionales relacionadas con el tema.', 'Piezas red de calidad-04 (1).jpg', 1, '2021-09-26'),
 (2, 'UTC Acreditada', 'Con orgullo recibimos este importante logro académico y lo compartimos con todos ustedes.\r\n\r\nSin duda, la UTC es una de las mejores Universidades del país, gracias al trabajo constante de sus autoridades, docentes, estudiantes, personal administrativo y de trabajo.\r\n\r\nEsta Acreditación es el reflejo del trabajo constante y el crecimiento permanente.', 'acreditada 2.jpeg', 1, '2021-09-26'),
-(3, 'Lanzamiento del libro \"Buenas Practicas para el Aseguramiento a la Calidad en la Educación Superior\".', 'El Comité Editorial a través de la Dirección de Comunicación, culminó la edición grafica del libro “Buenas practicas, para el aseguramiento y la calidad de la educación superior”. En los próximos días se realizará el lanzamiento oficial para que todos lo tengan a su alcance.', 'WhatsApp Image 2021-08-06 at 21.13.07.jpeg', 1, '2021-09-26');
+(3, 'Lanzamiento del libro \"Buenas Practicas para el Aseguramiento a la Calidad en la Educación Superior\".', 'El Comité Editorial a través de la Dirección de Comunicación, culminó la edición grafica del libro “Buenas practicas, para el aseguramiento y la calidad de la educación superior”. En los próximos días se realizará el lanzamiento oficial para que todos lo tengan a su alcance.', 'WhatsApp Image 2021-08-06 at 21.13.07.jpeg', 1, '2021-09-26'),
+(9, 'Clase espejo', 'En el marco de las actividades de internacionalización que viene llevando a cabo la Red Académica de Investigación en Calidad, continúan con éxito las clases espejo. El 14 y 21 de septiembre se impartió el tema Six Sigma con la participación de docentes y estudiantes del ITM y de la Universidad de Medellín.', 'clase espejo.jpeg', 1, '2023-11-28');
 
 -- --------------------------------------------------------
 
@@ -284,22 +285,26 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id`, `titulo`, `email`, `telefono`, `direccion`, `id_pais`, `estado`, `encargado`, `profesion`, `url_web`, `url_image`, `fecha`) VALUES
-(1, 'Universidad Técnica De Cotopaxi', 'rectorado@utc.edu.ec', '(03) 2- 252-307', 'Av. Simón Rodríguez s/n Barrio El Ejido Sector San Felipe.', 4, 1, 'Dr. Cristian Fabricio Tinajero Jiménez', 'Rector', 'https://www.utc.edu.ec/', 'Logo-UTC-Universidad-Tecnica-de-Cotopaxi.png', '2023-11-22 18:23:19'),
-(2, 'Instituto Tecnológico Metropolitano De Medellín ', 'rector@itm.edu.co', '(604) 440 51 00', 'Cra. 65 #98 A-75, Medellín, Antioquia, Colombia', 2, 1, 'Magíster Alejandro Villa Gómez', 'Secretaria Académica', 'https://www.itm.edu.co/', 'logo-27-300x248.png', '2023-11-22 18:23:32'),
-(3, 'Universidad Tecnológica Nacional Facultad Regional Buenos Aires', 'debonis@frba.utn.edu.ar', '541148677500', 'Ciudad Autónoma de Buenos Aires', 1, 1, 'Héctor Aiassa', 'Rector', 'https://www.frba.utn.edu.ar/', '68747470733a2f2f7777772e667262612e75746e2e6564752e61722f77702d636f6e74656e742f75706c6f6164732f323031372f31302f4c6f676f732d55544e2e42412d6373362d7472616e73706172656e74652e706e67.png', '2021-11-25 16:06:51'),
-(7, 'Universidad Estatal De Bolívar', 'rector@ueb.edu.ec', '(03) 2-206-802', 'Av. Ernesto Che Guevara s/n y Av. Gabriel Secaira', 4, 1, 'Ing. Hernán Arturo Rojas Sánchez, PhD.', 'Rector', 'https://www.ueb.edu.ec/', 'Logo-universidad-de-bolivar.png', '2023-11-22 18:24:16'),
-(8, 'Universidad Santo Tomas', 'rector@usantotomas.edu.co', '(57) 15878797', 'Cra. 26, Pasto, Nariño, Colombia', 2, 1, 'Fray José Gabriel Mesa Angulo, O.P.', 'Rector', 'https://www.usta.edu.co/', 'Logotipo_USTA_Colombia.gif', '2023-11-20 20:47:09'),
-(9, 'Universidad De La Habana', 'layla@rect.uh.cu', '78352336', 'La Habana, Cuba', 3, 1, 'Dra. Miriam Nicado', 'Rector', 'http://www.uh.cu/', 'U de la Habana.jpg', '2023-11-22 19:20:22'),
-(252, 'Institución Universitaria Salazar Y Herrera', '', '', '', 2, 1, 'Pbro. Jairo Alonso Molina Arango', 'Rector', 'https://www.iush.edu.co/', 'Logo-IUSH.png', '2023-11-21 19:39:02'),
-(253, 'Fundación Universitaria Claretiana', 'rector@uniclaretiana.edu.co', '604 6726033 Ext 901 ', '', 2, 1, 'Albeiro Ospina Ospina', 'Rector', 'https://www.uniclaretiana.edu.co/', 'Fundación Claretiana.png', '2023-11-20 21:27:57'),
-(255, 'Politécnico Colombiano Jaime Isaza Cadavid', 'rectoria@elpoli.edu.co', '3197933 / 3152489924', '', 2, 1, 'Jairo Alexander Osorio Saraz', 'Rector', 'https://www.politecnicojic.edu.co/', 'Logo Politécnico JIC.png', '2023-11-20 21:41:55'),
-(256, 'Institución Universitaria Visión De Las Américas', '', '', '', 2, 1, '', 'Rector', 'https://www.uam.edu.co/', 'logo visión de las américas.png', '2023-11-21 19:41:33'),
-(257, 'Fundación Universitaria Católica Del Norte', 'rectoria@ucn.edu.co', 'PBX (057) (4) 605 15 35 Ext. 4021', '', 2, 1, 'Pbro. Diego Luis Rendón Urrea', 'Rector', 'https://www.ucn.edu.co', 'U_Catolicadelnorte.jpg', '2023-11-21 19:43:57'),
-(258, 'Universidad Militar Nueva Granada', 'rectoria@unimilitar.edu.co', '+57601 6500 000 - 634 3200, Ext 1002-1003', '', 2, 1, 'Brigadier General (R) Luis Fernando Puentes Torres', 'Rector', 'https://www.umng.edu.co', 'U. Militar Nueva Granada.png', '2023-11-21 19:44:04'),
-(259, 'Universidad De Medellín', 'corresrec@udemedellin.edu.co', '(604) 590 45 00 – (604) 590 6999', '', 2, 1, 'Federico Restrepo Posada', 'Rector', 'https://udemedellin.edu.co/', 'logo_udemedellin2.png', '2023-11-21 19:31:28'),
-(260, 'Universidad Industrial De Santander', 'rectoria@uis.edu.co', '607 6344000 Ext. 2425', '', 2, 1, 'Hernán Porras Díaz', 'Rector', 'https://uis.edu.co', 'Logo-UIS1.png', '2022-05-08 05:00:00'),
-(261, 'Corporación Universidad Americana', 'rectoriamed@coruniamericana.edu.co', '4445004', '', 2, 1, 'Albert Coredor Gómez', 'Rector', 'https://americana.edu.co/medellin/', 'Logo-Americana.png', '2023-11-21 19:58:01'),
-(262, 'Universidad Tecnológica De Pereira', 'rectoria@utp.edu.co', '(+57)60 6 3137350', '', 2, 1, 'Luis Fernando Gavira Trujillo', 'Rector', 'https://www.utp.edu.co', 'U_PEREIRA.png', '2023-11-22 18:45:16');
+(1, 'Universidad Técnica de Cotopaxi', 'rectorado@utc.edu.ec', '(03) 2- 252-307', 'Av. Simón Rodríguez s/n Barrio El Ejido Sector San Felipe.', 4, 1, 'Dr. Cristian Fabricio Tinajero Jiménez', 'Rector', 'https://www.utc.edu.ec/', 'Logo-UTC-Universidad-Tecnica-de-Cotopaxi.png', '2023-12-25 17:31:08'),
+(2, 'Instituto Tecnológico Metropolitano de Medellín ', 'rector@itm.edu.co', '(604) 440 51 00', 'Cra. 65 #98 A-75, Medellín, Antioquia, Colombia', 2, 1, 'Magíster Alejandro Villa Gómez', 'Secretaria Académica', 'https://www.itm.edu.co/', 'logo-27-300x248.png', '2023-12-25 17:01:53'),
+(3, 'Universidad Tecnológica Nacional Facultad Regional Buenos Aires', 'debonis@frba.utn.edu.ar', '541148677500', 'Ciudad Autónoma de Buenos Aires', 1, 0, 'Héctor Aiassa', 'Rector', 'https://www.frba.utn.edu.ar/', '68747470733a2f2f7777772e667262612e75746e2e6564752e61722f77702d636f6e74656e742f75706c6f6164732f323031372f31302f4c6f676f732d55544e2e42412d6373362d7472616e73706172656e74652e706e67.png', '2023-12-25 16:51:54'),
+(7, 'Universidad Estatal de Bolívar', 'rector@ueb.edu.ec', '(03) 2-206-802', 'Av. Ernesto Che Guevara s/n y Av. Gabriel Secaira', 4, 1, 'Ing. Hernán Arturo Rojas Sánchez, PhD.', 'Rector', 'https://www.ueb.edu.ec/', 'Logo-universidad-de-bolivar.png', '2023-12-25 17:31:25'),
+(8, 'Universidad Santo Tomas', 'rector@usantotomas.edu.co', '(57) 15878797', 'Cra. 26, Pasto, Nariño, Colombia', 2, 1, 'Fray José Gabriel Mesa Angulo, O.P.', 'Rector', 'https://www.usta.edu.co/', 'U-Santo Tomás.png', '2023-12-25 17:12:06'),
+(9, 'Universidad de La Habana', 'layla@rect.uh.cu', '78352336', 'La Habana, Cuba', 3, 1, 'Dra. Miriam Nicado', 'Rector', 'http://www.uh.cu/', 'U de la Habana.jpg', '2023-12-25 17:31:42'),
+(252, 'Institución Universitaria Salazar y Herrera', '', '', '', 2, 1, 'Pbro. Jairo Alonso Molina Arango', 'Rector', 'https://www.iush.edu.co/', 'Logo-IUSH.png', '2023-12-25 16:54:50'),
+(253, 'Fundación Universitaria Claretiana', 'rector@uniclaretiana.edu.co', '604 6726033 Ext 901 ', '', 2, 1, 'Albeiro Ospina Ospina', 'Rector', 'https://www.uniclaretiana.edu.co/', 'Fundación Claretiana.png', '2023-12-25 16:56:37'),
+(255, 'Politécnico Colombiano Jaime Isaza Cadavid', 'rectoria@elpoli.edu.co', '3197933 / 3152489924', '', 2, 1, 'Jairo Alexander Osorio Saraz', 'Rector', 'https://www.politecnicojic.edu.co/', 'Logo Politécnico JIC.png', '2023-12-25 16:56:53'),
+(256, 'Institución Universitaria Visión de las Américas', '', '', '', 2, 1, '', 'Rector', 'https://www.uam.edu.co/', 'logo visión de las américas.png', '2023-12-25 16:57:15'),
+(257, 'Fundación Universitaria Católica del Norte', 'rectoria@ucn.edu.co', 'PBX (057) (4) 605 15 35 Ext. 4021', '', 2, 1, 'Pbro. Diego Luis Rendón Urrea', 'Rector', 'https://www.ucn.edu.co', 'U_Catolicadelnorte.jpg', '2023-12-25 16:57:28'),
+(258, 'Universidad Militar Nueva Granada', 'rectoria@unimilitar.edu.co', '+57601 6500 000 - 634 3200, Ext 1002-1003', '', 2, 1, 'Brigadier General (R) Luis Fernando Puentes Torres', 'Rector', 'https://www.umng.edu.co', 'U. Militar Nueva Granada.png', '2023-12-25 16:57:38'),
+(259, 'Universidad de Medellín', 'corresrec@udemedellin.edu.co', '(604) 590 45 00 – (604) 590 6999', '', 2, 1, 'Federico Restrepo Posada', 'Rector', 'https://udemedellin.edu.co/', 'logo_udemedellin2.png', '2023-12-25 16:57:50'),
+(260, 'Universidad Industrial de Santander', 'rectoria@uis.edu.co', '607 6344000 Ext. 2425', '', 2, 1, 'Hernán Porras Díaz', 'Rector', 'https://uis.edu.co', 'Logo-UIS1.png', '2023-12-25 16:57:54'),
+(261, 'Corporación Universidad Americana', 'rectoriamed@coruniamericana.edu.co', '4445004', '', 2, 0, 'Albert Coredor Gómez', 'Rector', 'https://americana.edu.co/medellin/', 'Logo-Americana.png', '2023-12-25 16:51:54'),
+(262, 'Universidad Tecnológica de Pereira', 'rectoria@utp.edu.co', '(+57)60 6 3137350', '', 2, 1, 'Luis Fernando Gavira Trujillo', 'Rector', 'https://www.utp.edu.co', 'U_PEREIRA.png', '2023-12-25 16:58:27'),
+(264, 'Universidad de la Amazonia', '', '', '', 2, 1, '', '', 'https://www.uniamazonia.edu.co/', 'Imagotipo_de_la_Universidad_de_la_Amazonia.png', '2023-12-25 17:09:52'),
+(265, 'Universidad Técnica de Ambato', '', '', '', 4, 1, '', '', 'https://www.uta.edu.ec/', 'Universidad-Tecnica-de-Ambato.png', '2023-12-25 17:30:20'),
+(267, 'Universidad de Antioquia', '', '', '', 2, 1, '', '', 'https://www.udea.edu.co/', 'logosimbolo-horizontal-U. Antioquia.png', '2023-12-25 17:36:18'),
+(269, 'Corporación Universitaria Minuto de Dios', '', '', '', 2, 1, '', '', 'https://www.uniminuto.edu/', 'logos_uniminuto1.png', '2023-12-25 17:45:52');
 
 -- --------------------------------------------------------
 
@@ -369,6 +374,7 @@ CREATE TABLE `events` (
   `hora` varchar(30) NOT NULL,
   `phone` varchar(13) NOT NULL,
   `venue` varchar(500) NOT NULL,
+  `url_video` text NOT NULL,
   `url_web` varchar(800) NOT NULL,
   `url_image` varchar(500) NOT NULL,
   `descripcion` text NOT NULL,
@@ -381,22 +387,21 @@ CREATE TABLE `events` (
 -- Volcado de datos para la tabla `events`
 --
 
-INSERT INTO `events` (`id`, `titulo`, `fecha`, `hora`, `phone`, `venue`, `url_web`, `url_image`, `descripcion`, `estado`, `orden`, `registro`) VALUES
-(21, 'Logros y Desafíos de los Sistemas Nacionales de Aseguramiento de la calidad.', '2021-11-09', '10:00', '0984614440', 'Av. Jorge Salvador Lara. S39, lote 38.', '', 'WhatsApp Image 2021-11-04 at 15.46.10.jpeg', 'Segundo Seminario Internacional de Calidad en la Educación Superior. \r\n', 1, 0, '2021-11-09 09:47:18'),
-(22, 'Sistemas internos de gestión de la calidad.', '2021-11-10', '11:00', '0983282717', 'Av. 10 de Agosto y Cumanda.', '', 'WhatsApp Image 2021-11-04 at 15.46.11.jpeg', 'Segundo Seminario Internacional de Calidad en la Educación Superior.', 1, 0, '2021-11-10 09:46:54'),
-(31, 'Nanociencia y energía solar, una alternativa para el futuro de la transición energética.', '2023-05-24', '10:00', '', '', '', 'Nanociencia.png', 'Webinar', 1, 0, '2023-05-24 19:51:47'),
-(33, 'La gestión del retiro de productos defectuosos', '2022-08-19', '10:00', '', '', '', 'Cátedra abierta 19 de agosto.jpg', 'Webinar', 1, 0, '2022-08-19 20:16:02'),
-(34, 'Gestión de la calidad en el periodismo', '2022-09-16', '10:00', '', '', '', 'Cátedra abierta 16 de septiembre.jpg', 'Webinar', 1, 0, '2022-09-16 20:16:09'),
-(35, 'Neuromarketing', '2022-09-30', '10:00', '', '', 'https://www.youtube.com/watch?v=Th9aYtmqSYc', 'Cátedra abierta 30 de septiembre.png', 'Webinar', 1, 0, '2022-09-30 20:23:19'),
-(36, 'Emprendimiento, calidad y comercio justo', '2022-12-06', '17:00', '', '', '', 'Imagen de WhatsApp 2023-11-28 a las 14.42.04_8eb253af.jpg', 'Webinar', 1, 0, '2022-12-06 20:29:43'),
-(37, 'Transformación digital como soporte a la gestión de la calidad', '2022-11-08', '08:30', '', 'Universidad Técnica de Cotopaxi', 'https://fb.watch/oAOpFSMCZJ/', 'IMG-20231011-WA0008.jpg', 'VI CONGRESO Internacional de Investigación en Calidad', 1, 0, '2022-11-08 21:54:58'),
-(38, 'Transformación digital como soporte a la gestión de la calidad', '2022-11-08', '08:30', '', 'Universidad Técnica de Cotopaxi', 'https://fb.watch/oAOpFSMCZJ/', 'IMG-20231011-WA0013.jpg', 'VI CONGRESO Internacional de Investigación en Calidad', 1, 0, '2022-11-08 21:55:02'),
-(39, 'Los sistemas de indicadores y su impacto en la gestión universitaria', '2022-11-09', '10:30', '', 'Universidad Técnica de Cotopaxi', 'https://fb.watch/oAOBRo8I33/', 'IMG-20231011-WA0014.jpg', 'IV Seminario internacional de calidad en la educación superior', 1, 0, '2022-11-09 21:57:44'),
-(41, 'Los sistemas de indicadores y su impacto en la gestión universitaria', '2022-11-09', '10:30', '', 'Universidad Técnica de Cotopaxi', 'https://fb.watch/oAOBRo8I33/', 'IMG-20231011-WA0012.jpg', 'IV Seminario internacional de calidad en la educación superior', 1, 0, '2022-11-09 21:57:48'),
-(42, 'Sistemas Integrados de gestión', '2023-08-30', '18:00', '', '', '', 'IMG-20231124-WA0019 (1).jpg', 'Catedra abierta', 1, 0, '2023-08-30 21:34:38'),
-(43, 'Clase espejo', '2023-11-28', '10:00', '', '', '', 'clase espejo.jpeg', 'En el marco de las actividades de internacionalización que viene llevando a cabo la Red Académica de Investigación en Calidad, continúan con éxito las clases espejo. El 14 y 21 de septiembre se impartió el tema Six Sigma con la participación de docentes y estudiantes del ITM y de la Universidad de Medellín.', 1, 0, '2023-11-28 19:35:01'),
-(45, '', '2022-11-23', '10:00', '', '', '', 'image.png', 'III Seminario internacional de calidad en la educación superior', 1, 0, '2022-11-23 18:50:13'),
-(46, 'El liderazgo y la dirección estratégica como pilares de la gestión organizacional', '2022-11-03', '', '', 'Universidad Técnica de Cotopaxi ', '', 'Imagen de WhatsApp 2023-11-29 a las 14.14.59_e01fca68.jpg', 'IV Encuentro de semilleros', 1, 0, '2022-11-03 19:18:27');
+INSERT INTO `events` (`id`, `titulo`, `fecha`, `hora`, `phone`, `venue`, `url_video`, `url_web`, `url_image`, `descripcion`, `estado`, `orden`, `registro`) VALUES
+(21, 'Logros y Desafíos de los Sistemas Nacionales de Aseguramiento de la calidad.', '2021-11-09', '10:00', '0984614440', 'Av. Jorge Salvador Lara. S39, lote 38.', '', '', 'WhatsApp Image 2021-11-04 at 15.46.10.jpeg', 'Segundo Seminario Internacional de Calidad en la Educación Superior. \r\n', 1, 0, '2021-11-09 09:47:18'),
+(22, 'Sistemas internos de gestión de la calidad.', '2021-11-10', '11:00', '0983282717', 'Av. 10 de Agosto y Cumanda.', '', '', 'WhatsApp Image 2021-11-04 at 15.46.11.jpeg', 'Segundo Seminario Internacional de Calidad en la Educación Superior.', 1, 0, '2021-11-10 09:46:54'),
+(31, 'Nanociencia y energía solar, una alternativa para el futuro de la transición energética.', '2023-05-24', '10:00', '', '', '', '', 'Nanociencia.png', 'Webinar', 1, 0, '2023-05-24 19:51:47'),
+(33, 'La gestión del retiro de productos defectuosos', '2022-08-19', '10:00', '', '', '', '', 'Cátedra abierta 19 de agosto.jpg', 'Webinar', 1, 0, '2022-08-19 20:16:02'),
+(34, 'Gestión de la calidad en el periodismo', '2022-09-16', '10:00', '', '', '', '', 'Cátedra abierta 16 de septiembre.jpg', 'Webinar', 1, 0, '2022-09-16 20:16:09'),
+(35, 'Neuromarketing', '2022-09-30', '10:00', '', '', '', 'https://www.youtube.com/watch?v=Th9aYtmqSYc', 'Cátedra abierta 30 de septiembre.png', 'Webinar', 1, 0, '2022-09-30 20:23:19'),
+(36, 'Emprendimiento, calidad y comercio justo', '2022-12-06', '17:00', '', '', '', '', 'Imagen de WhatsApp 2023-11-28 a las 14.42.04_8eb253af.jpg', 'Webinar', 1, 0, '2022-12-06 20:29:43'),
+(37, 'Transformación digital como soporte a la gestión de la calidad', '2022-11-08', '08:30', '', 'Universidad Técnica de Cotopaxi', '', 'https://fb.watch/oAOpFSMCZJ/', 'IMG-20231011-WA0008.jpg', 'VI CONGRESO Internacional de Investigación en Calidad', 1, 0, '2022-11-08 21:54:58'),
+(38, 'Transformación digital como soporte a la gestión de la calidad', '2022-11-08', '08:30', '', 'Universidad Técnica de Cotopaxi', '', 'https://fb.watch/oAOpFSMCZJ/', 'IMG-20231011-WA0013.jpg', 'VI CONGRESO Internacional de Investigación en Calidad', 1, 0, '2022-11-08 21:55:02'),
+(39, 'Los sistemas de indicadores y su impacto en la gestión universitaria', '2022-11-09', '10:30', '', 'Universidad Técnica de Cotopaxi', '', 'https://fb.watch/oAOBRo8I33/', 'IMG-20231011-WA0014.jpg', 'IV Seminario internacional de calidad en la educación superior', 1, 0, '2022-11-09 21:57:44'),
+(41, 'Los sistemas de indicadores y su impacto en la gestión universitaria', '2022-11-09', '10:30', '', 'Universidad Técnica de Cotopaxi', '', 'https://fb.watch/oAOBRo8I33/', 'IMG-20231011-WA0012.jpg', 'IV Seminario internacional de calidad en la educación superior', 1, 0, '2022-11-09 21:57:48'),
+(42, 'Sistemas Integrados de gestión', '2023-08-30', '18:00', '', '', '', '', 'IMG-20231124-WA0019 (1).jpg', 'Catedra abierta', 1, 0, '2023-08-30 21:34:38'),
+(45, '', '2022-11-23', '10:00', '', '', '', '', 'image.jpg', 'III Seminario internacional de calidad en la educación superior', 1, 0, '2023-12-24 03:29:43'),
+(46, 'El liderazgo y la dirección estratégica como pilares de la gestión organizacional', '2022-11-03', '', '', 'Universidad Técnica de Cotopaxi ', '', '', 'Imagen de WhatsApp 2023-11-29 a las 14.14.59_e01fca68.jpg', 'IV Encuentro de semilleros', 1, 0, '2022-11-03 19:18:27');
 
 -- --------------------------------------------------------
 
@@ -463,9 +468,10 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `news_title`, `news_detail`, `file`, `date`) VALUES
-(15, 'Lanzamiento del libro \"Buenas Practicas para el Aseguramiento a la Calidad en la Educación Superior\".', '<p>El Comit&eacute; Editorial a trav&eacute;s de&nbsp;la Direcci&oacute;n de Comunicaci&oacute;n, culmin&oacute; la edici&oacute;n grafica del libro &ldquo;Buenas practicas, para el aseguramiento y la calidad de la educaci&oacute;n superior&rdquo;. En los pr&oacute;ximos d&iacute;as se realizar&aacute; el lanzamiento oficial para que todos lo tengan a su alcance.</p>\r\n', 'efac_2b6d2b7b1ce3000cb04341cf51cad446.jpeg', '2021-08-06'),
-(17, 'UTC Acreditada', '<p>Con orgullo recibimos este importante logro acad&eacute;mico y lo compartimos con todos ustedes.</p>\r\n\r\n<p>Sin duda, la UTC es una de las mejores Universidades del pa&iacute;s, gracias al trabajo constante de sus autoridades, docentes, estudiantes, personal administrativo y de trabajo.</p>\r\n\r\n<p>Esta Acreditaci&oacute;n es el reflejo del trabajo constante y el crecimiento permanente.</p>\r\n', 'efac_fae4953ea3aba774587a9c38ef262952.jpeg', '2021-08-06'),
-(18, 'III Encuentro Internacional de Semilleros de Investigación en Calidad y Metrología', '<p>La Red Acad&eacute;mica de investigaci&oacute;n en calidad es una instancia que investiga y discute la calidad como una herramienta para aumentar la productividad y competitividad organizacional; por lo tanto, debe crear los espacios para el debate, la cr&iacute;tica y la discusi&oacute;n de los problemas relacionados con la calidad, su concepto e implementaci&oacute;n en los diferentes procesos, con el prop&oacute;sito de formar estudiantes con soporte te&oacute;rico, investigativo, esp&iacute;ritu cr&iacute;tico y propositivo en las discusiones acad&eacute;micas y acciones organizacionales relacionadas con el tema.</p>\r\n', 'efac_7382310c9f0373079166cd30ce338e5b.jpg', '2021-08-06');
+(15, 'Lanzamiento del libro \"Buenas Practicas para el Aseguramiento a la Calidad en la Educación Superior\".', 'El Comité Editorial a través de la Dirección de Comunicación, culminó la edición grafica del libro “Buenas practicas, para el aseguramiento y la calidad de la educación superior”. En los próximos días se realizará el lanzamiento oficial para que todos lo tengan a su alcance.     ', 'efac_2b6d2b7b1ce3000cb04341cf51cad446.jpeg', '2021-08-06'),
+(17, 'UTC Acreditada', 'Con orgullo recibimos este importante logro académico y lo compartimos con todos ustedes.\nSin duda, la UTC es una de las mejores Universidades del país, gracias al trabajo constante de sus autoridades, docentes, estudiantes, personal administrativo y de trabajo.\nEsta Acreditación es el reflejo del trabajo constante y el crecimiento permanente.                ', 'efac_fae4953ea3aba774587a9c38ef262952.jpeg', '2021-08-06'),
+(18, 'III Encuentro Internacional de Semilleros de Investigación en Calidad y Metrología', 'La Red Académica de investigación en calidad es una instancia que investiga y discute la calidad como una herramienta para aumentar la productividad y competitividad organizacional; por lo tanto, debe crear los espacios para el debate, la crítica y la discusión de los problemas relacionados con la calidad, su concepto e implementación en los diferentes procesos, con el propósito de formar estudiantes con soporte teórico, investigativo, espíritu crítico y propositivo en las discusiones académicas y acciones organizacionales relacionadas con el tema.', 'efac_7382310c9f0373079166cd30ce338e5b.jpg', '2021-08-06'),
+(19, 'Clase espejo', 'En el marco de las actividades de internacionalización que viene llevando a cabo la Red Académica de Investigación en Calidad, continúan con éxito las clases espejo. El 14 y 21 de septiembre se impartió el tema Six Sigma con la participación de docentes y estudiantes del ITM y de la Universidad de Medellín.', 'clase espejo.jpeg', '2023-11-28');
 
 -- --------------------------------------------------------
 
@@ -510,8 +516,7 @@ CREATE TABLE `proyecto` (
 --
 
 INSERT INTO `proyecto` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `publicado`) VALUES
-(6, 'lkjhgffghjk', '¿Quieres impedir que los visitantes copien contenido de tu sitio web? En este artículo, te mostraremos cómo detener el robo de contenido de tu sitio web mediante jQuery y Javascript. Para impedir que se robe contenido de tu web puedes hacer dos cosas, una es desactivar el botón derecho del ratón, y lo segundo es desactivar la acción de cortar (CTRL+X), copiar (CTRL+C) y pegar (CTRL+V). Mediante jQuery, puedes deshabilitar fácilmente el botón derecho del ratón y también impedir que se corte, copie y pegue contenido de tu web.', '', 1, '2022-03-22 19:44:29'),
-(7, '', '', '413740749012.pdf', 0, '2022-03-22 21:55:48');
+(9, 'MODELO DE MEDICIÓN DE LAS HERRAMIENTAS EMPLEADAS EN LOS PROCESOS DE INTERNACIONALIZACIÓN DEL CURRÍCULO DE LAS INSTITUCIONES DE EDUCACIÓN SUPERIOR: AVANCES Y PRINCIPALES RESULTADOS', '', 'Convenio y proyecto.pdf', 1, '2023-12-25 16:28:32');
 
 -- --------------------------------------------------------
 
@@ -787,7 +792,7 @@ INSERT INTO `usuarios` (`id`, `nombre`, `usuario`, `password`, `perfil`, `foto`,
 (68, 'Nelly Maribel Guashpa Yungas', 'nelly', '$2a$07$asxx54ahjppf45sd87a5auGZEtGHuyZwm.Ur.FJvWLCql3nmsMbXy', 'Docente', 'vistas/img/usuarios/nelly/396.jpg', 1, '2022-02-11 04:49:29', '2022-02-11 09:49:29'),
 (69, 'Luis Alfredo Yambay Amaguaya', 'luis', '$2a$07$asxx54ahjppf45sd87a5auGZEtGHuyZwm.Ur.FJvWLCql3nmsMbXy', 'Colaborador', 'vistas/img/usuarios/luis/438.jpg', 0, '0000-00-00 00:00:00', '2022-03-22 19:48:45'),
 (70, 'Nelly Maribel Guashpa Yungas', 'nelly123', '$2a$07$asxx54ahjppf45sd87a5auRajNP0zeqOkB9Qda.dSiTb2/n.wAC/2', 'Docente', 'vistas/img/usuarios/nelly123/105.png', 1, '2022-02-18 15:41:57', '2022-02-18 20:41:57'),
-(71, 'romel', 'romel1', '$2a$07$asxx54ahjppf45sd87a5auVdAYP5Bpn6Tcxdq22C9QV2v53VLu5de', 'Administrador', 'vistas/img/usuarios/123/597.jpg', 1, '2023-11-29 13:27:34', '2023-11-29 18:27:34');
+(71, 'romel', 'romel1', '$2a$07$asxx54ahjppf45sd87a5auVdAYP5Bpn6Tcxdq22C9QV2v53VLu5de', 'Administrador', 'vistas/img/usuarios/123/597.jpg', 1, '2023-12-24 19:07:15', '2023-12-25 00:07:15');
 
 -- --------------------------------------------------------
 
@@ -1068,7 +1073,7 @@ ALTER TABLE `alumno`
 -- AUTO_INCREMENT de la tabla `banner`
 --
 ALTER TABLE `banner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `categorias`
@@ -1080,7 +1085,7 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=264;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=270;
 
 --
 -- AUTO_INCREMENT de la tabla `contacto`
@@ -1098,7 +1103,7 @@ ALTER TABLE `evaluador`
 -- AUTO_INCREMENT de la tabla `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT de la tabla `excos`
@@ -1116,7 +1121,7 @@ ALTER TABLE `gallery`
 -- AUTO_INCREMENT de la tabla `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(70) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(70) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `pais`
@@ -1128,7 +1133,7 @@ ALTER TABLE `pais`
 -- AUTO_INCREMENT de la tabla `proyecto`
 --
 ALTER TABLE `proyecto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `publicacion`
