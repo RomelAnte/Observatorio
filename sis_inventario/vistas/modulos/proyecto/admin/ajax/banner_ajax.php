@@ -78,7 +78,7 @@ if($action == 'ajax'){
 						  
 						  <div class="caption">
 						  	<div style="height: 99px; margin-top: -20px; ">
-							<h3 style="font-size: 16px; font-family: arial; text-align: justify; "><?php echo $titulo;?></h3>
+							<h3 style="font-size: 16px; font-family: arial; text-align: justify; "><?php echo strip_tags(substr($titulo,0,80));?>...</h3>
 							</div>
 							<p class='text-right'><a href="banneredit.php?id=<?php echo intval($id_slide);?>" class="btn btn-info" role="button"><i class='glyphicon glyphicon-edit'></i> Editar</a> <button type="button" class="btn btn-danger" onclick="eliminar_slide('<?php echo $id_slide;?>');" role="button"><i class='glyphicon glyphicon-trash'></i> Eliminar</button></p>
 						  </div>
