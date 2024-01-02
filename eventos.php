@@ -45,7 +45,7 @@
               <div style="height:45px;"><h3><?php echo strip_tags(substr($row['titulo'],0,45)) ;?>...</h3></div>
               <h4>Publicado: 
                 <?php
-                  $fecha = $row['registro'];
+                  $fecha = $row['fecha'];
                   $fechaEntera = strtotime($fecha);
                   $anio = date("Y", $fechaEntera);
                   $mes = date("m", $fechaEntera);

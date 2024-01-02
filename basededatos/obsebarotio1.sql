@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-12-2023 a las 00:09:51
+-- Tiempo de generación: 02-01-2024 a las 20:23:49
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -393,16 +393,16 @@ INSERT INTO `events` (`id`, `titulo`, `fecha`, `hora`, `phone`, `venue`, `url_vi
 (31, 'Nanociencia y energía solar, una alternativa para el futuro de la transición energética.', '2023-05-24', '10:00', '', '', '', '', 'Nanociencia.png', 'Webinar', 1, 0, '2023-05-24 19:51:47'),
 (33, 'La gestión del retiro de productos defectuosos', '2022-08-19', '10:00', '', '', '', '', 'Cátedra abierta 19 de agosto.jpg', 'Webinar', 1, 0, '2022-08-19 20:16:02'),
 (34, 'Gestión de la calidad en el periodismo', '2022-09-16', '10:00', '', '', '', '', 'Cátedra abierta 16 de septiembre.jpg', 'Webinar', 1, 0, '2022-09-16 20:16:09'),
-(35, 'Neuromarketing', '2022-09-30', '10:00', '', '', '', 'https://www.youtube.com/watch?v=Th9aYtmqSYc', 'Cátedra abierta 30 de septiembre.png', 'Webinar', 1, 0, '2022-09-30 20:23:19'),
+(35, 'Neuromarketing', '2022-09-30', '10:00', '', '', 'https://www.youtube.com/watch?v=Th9aYtmqSYc', '', 'Cátedra abierta 30 de septiembre.png', 'Webinar', 1, 0, '2022-09-30 23:58:32'),
 (36, 'Emprendimiento, calidad y comercio justo', '2022-12-06', '17:00', '', '', '', '', 'Imagen de WhatsApp 2023-11-28 a las 14.42.04_8eb253af.jpg', 'Webinar', 1, 0, '2022-12-06 20:29:43'),
-(37, 'Transformación digital como soporte a la gestión de la calidad', '2022-11-08', '08:30', '', 'Universidad Técnica de Cotopaxi', '', 'https://fb.watch/oAOpFSMCZJ/', 'IMG-20231011-WA0008.jpg', 'VI CONGRESO Internacional de Investigación en Calidad', 1, 0, '2022-11-08 21:54:58'),
-(38, 'Transformación digital como soporte a la gestión de la calidad', '2022-11-08', '08:30', '', 'Universidad Técnica de Cotopaxi', '', 'https://fb.watch/oAOpFSMCZJ/', 'IMG-20231011-WA0013.jpg', 'VI CONGRESO Internacional de Investigación en Calidad', 1, 0, '2022-11-08 21:55:02'),
-(39, 'Los sistemas de indicadores y su impacto en la gestión universitaria', '2022-11-09', '10:30', '', 'Universidad Técnica de Cotopaxi', '', 'https://fb.watch/oAOBRo8I33/', 'IMG-20231011-WA0014.jpg', 'IV Seminario internacional de calidad en la educación superior', 1, 0, '2022-11-09 21:57:44'),
-(41, 'Los sistemas de indicadores y su impacto en la gestión universitaria', '2022-11-09', '10:30', '', 'Universidad Técnica de Cotopaxi', '', 'https://fb.watch/oAOBRo8I33/', 'IMG-20231011-WA0012.jpg', 'IV Seminario internacional de calidad en la educación superior', 1, 0, '2022-11-09 21:57:48'),
+(37, 'Transformación digital como soporte a la gestión de la calidad', '2022-11-08', '08:30', '', 'Universidad Técnica de Cotopaxi', 'https://fb.watch/oAOpFSMCZJ/', '', 'IMG-20231011-WA0008.jpg', 'VI CONGRESO Internacional de Investigación en Calidad', 1, 0, '2022-11-08 23:58:42'),
+(41, 'Los sistemas de indicadores y su impacto en la gestión universitaria', '2022-11-09', '10:30', '', 'Universidad Técnica de Cotopaxi', 'https://fb.watch/oAOBRo8I33/', '', 'IMG-20231011-WA0012.jpg', 'IV Seminario internacional de calidad en la educación superior', 1, 0, '2022-11-09 23:59:04'),
 (42, 'Sistemas Integrados de gestión', '2023-08-30', '18:00', '', '', '', '', 'IMG-20231124-WA0019 (1).jpg', 'Catedra abierta', 1, 0, '2023-08-30 21:34:38'),
-(45, '', '2022-11-23', '10:00', '', '', '', '', 'image.jpg', 'III Seminario internacional de calidad en la educación superior', 1, 0, '2023-12-24 03:29:43'),
-(46, 'El liderazgo y la dirección estratégica como pilares de la gestión organizacional', '2022-11-03', '', '', 'Universidad Técnica de Cotopaxi ', '', '', 'Imagen de WhatsApp 2023-11-29 a las 14.14.59_e01fca68.jpg', 'IV Encuentro de semilleros', 1, 0, '2022-11-03 19:18:27'),
-(49, 'Introducción a Lean Six Sigma White Belt', '2023-04-18', '11:00', '', '', '', '', 'zyro-image.png', 'Webinar', 1, 0, '2023-12-25 21:25:52');
+(45, '', '2022-11-23', '10:00', '', '', '', '', 'image.jpg', 'III Seminario internacional de calidad en la educación superior', 1, 0, '2022-11-24 03:29:43'),
+(46, 'El liderazgo y la dirección estratégica como pilares de la gestión organizacional', '2022-11-03', '', '', 'Universidad Técnica de Cotopaxi ', 'https://www.youtube.com/watch?v=BF-aAODmP74', '', 'Imagen de WhatsApp 2023-11-29 a las 14.14.54_d3a7bac1.jpg', 'IV Encuentro de semilleros', 1, 0, '2022-11-03 19:08:34'),
+(49, 'Introducción a Lean Six Sigma White Belt', '2023-04-18', '11:00', '', '', '', '', 'zyro-image.png', 'Webinar', 1, 0, '2023-04-18 21:25:52'),
+(50, 'Implementación de normas ISO como ventaja competitiva para emprendimientos enfocados en la calidad', '2023-07-11', '10:00', '', '', '', '', 'Webinar.png', 'Webinar', 1, 0, '2023-07-11 23:56:38'),
+(52, 'Simposio por los 10 años de la Red', '2022-11-04', '', '', 'Universidad Técnica de Cotopaxi ', 'https://www.youtube.com/watch?v=0NyvoqZ1bjM', '', 'Imagen de WhatsApp 2023-11-29 a las 14.14.59_e01fca68.jpg', 'IV Encuentro de semilleros', 1, 0, '2022-11-04 19:05:15');
 
 -- --------------------------------------------------------
 
@@ -791,7 +791,7 @@ INSERT INTO `usuarios` (`id`, `nombre`, `usuario`, `password`, `perfil`, `foto`,
 (68, 'Nelly Maribel Guashpa Yungas', 'nelly', '$2a$07$asxx54ahjppf45sd87a5auGZEtGHuyZwm.Ur.FJvWLCql3nmsMbXy', 'Docente', 'vistas/img/usuarios/nelly/396.jpg', 1, '2022-02-11 04:49:29', '2022-02-11 09:49:29'),
 (69, 'Luis Alfredo Yambay Amaguaya', 'luis', '$2a$07$asxx54ahjppf45sd87a5auGZEtGHuyZwm.Ur.FJvWLCql3nmsMbXy', 'Colaborador', 'vistas/img/usuarios/luis/438.jpg', 0, '0000-00-00 00:00:00', '2022-03-22 19:48:45'),
 (70, 'Nelly Maribel Guashpa Yungas', 'nelly123', '$2a$07$asxx54ahjppf45sd87a5auRajNP0zeqOkB9Qda.dSiTb2/n.wAC/2', 'Docente', 'vistas/img/usuarios/nelly123/105.png', 1, '2022-02-18 15:41:57', '2022-02-18 20:41:57'),
-(71, 'romel', 'romel1', '$2a$07$asxx54ahjppf45sd87a5auVdAYP5Bpn6Tcxdq22C9QV2v53VLu5de', 'Administrador', 'vistas/img/usuarios/123/597.jpg', 1, '2023-12-25 13:56:52', '2023-12-25 18:56:52');
+(71, 'romel', 'romel1', '$2a$07$asxx54ahjppf45sd87a5auVdAYP5Bpn6Tcxdq22C9QV2v53VLu5de', 'Administrador', 'vistas/img/usuarios/123/597.jpg', 1, '2023-12-25 18:57:40', '2023-12-25 23:57:40');
 
 -- --------------------------------------------------------
 
@@ -1102,7 +1102,7 @@ ALTER TABLE `evaluador`
 -- AUTO_INCREMENT de la tabla `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT de la tabla `excos`
